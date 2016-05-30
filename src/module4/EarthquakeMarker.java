@@ -70,7 +70,8 @@ public abstract class EarthquakeMarker extends SimplePointMarker
 		// OPTIONAL TODO: draw X over marker if within past day
 		if (this.getProperty("age").toString().equals("Past Hour")) {
 			//System.out.println("Past Hour");
-			pg.stroke(0,0,0);
+			//pg.stroke(0,0,0);
+			pg.strokeWeight(2);
 			pg.line(x - (float) 5, y - (float) 5, x + (float) 5, y + (float) 5);
 			pg.line(x - (float) 5, y + (float) 5, x + (float) 5, y - (float) 5);
 		}
